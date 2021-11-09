@@ -7,12 +7,22 @@ using System.Text;
 
 public class FikmatApi : MonoBehaviour
 {
+    public static FikmatApi instance = null;
+
     private const string API_URL = "http://localhost:8020/api";
     private const float FREQUENCY = 1.0f / 30;
 
     private FikMatData data = new FikMatData();
     private bool dirty = false;
     private float update;
+
+    void Awake()
+    {
+      if (instance == null)
+          instance = this;
+      else if (instance != this)
+          Destroy(gameObject);
+    }
 
     void Start()
     {
