@@ -1,6 +1,6 @@
 # fikmat-api-wrapper-unity
 
-Simple Unity wrapper for [Fikmat API](https://github.com/fikmatt/fikmat-api)  
+Simple Unity wrapper for [Fikmat API](https://github.com/fikmat/fikmat-api)  
 It deals with request sending automatically, you just update the data and they will be processed with next request in queue.
 
 _it should work but I don't usually work with Unity & C#, so feel free to make a pull request with improvements_
